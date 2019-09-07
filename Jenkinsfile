@@ -20,5 +20,10 @@ pipeline {
         echo 'end'
       }
     }
+    stage('buildstage') {
+      steps {
+        build(job: 'test1', propagate: true)
+      }
+    }
   }
 }
