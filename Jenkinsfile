@@ -17,7 +17,7 @@ pipeline {
     }
     stage('bluestage') {
       steps {
-        sh 'end'
+        echo 'end'
       }
     }
   }
