@@ -5,9 +5,7 @@ pipeline {
       parallel {
         stage('stage1') {
           steps {
-            sh '''echo"hai"
-
-'''
+            echo 'pipeline'
           }
         }
         stage('stage2') {
